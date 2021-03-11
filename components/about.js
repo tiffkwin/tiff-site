@@ -37,7 +37,7 @@ export default function About() {
             <button className="h-8 w-8 rounded-full bg-white mx-2 hover:bg-blue-50" onClick={() => window.open('https://www.linkedin.com/in/tiffany-k-nguyen/')}>
               <FontAwesomeIcon icon={faLinkedinIn}></FontAwesomeIcon>
             </button>
-            <button className="h-8 w-8 rounded-full bg-white mx-2 hover:bg-blue-50" onClick={() => window.open('https://twitter.com/tiffknguyen')}>
+            <button className="h-8 w-8 rounded-full bg-white ml-2 hover:bg-blue-50" onClick={() => window.open('https://twitter.com/tiffknguyen')}>
               <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
             </button>
         </div>
