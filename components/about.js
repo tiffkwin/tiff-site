@@ -7,8 +7,7 @@ export default function About() {
       backgroundPosition:'center',
       backgroundImage: 'linear-gradient( rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35) ), url(\'/california-water.jpg\')',
       backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-      // filter: 'grayscale(100%)'
+      backgroundRepeat: 'no-repeat'
   };
 
   return (
