@@ -1,48 +1,42 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { Heading, Box, VStack, Image, Text, Center, HStack } from '@chakra-ui/react'
+import { motion } from 'framer-motion'
 
-export default function About() {
-  const styling = {
-      backgroundAttachment: 'fixed',
-      backgroundPosition:'center',
-      backgroundImage: 'linear-gradient( rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35) ), url(\'/california-water.jpg\')',
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat'
-  };
+export default function Nav() {
+  //f25a35
 
   return (
-    <section className="w-screen h-screen bg-black" style={styling}>
-      <div className="flex items-center w-full h-full">
-        <div className="flex flex-col w-full items-center">
-          <div className="w-2/3 rounded border border-white bg-black">
-            <div className="rounded-t-sm h-6 border-b border-white flex flex-row py-1 px-2 items-center bg-white">
-              <div className="rounded-full border-2 border-black h-3 w-3 mx-1 bg-black"></div>
-              <div className="rounded-full border-2 border-black h-3 w-3 mr-1 bg-black"></div>
-              <div className="rounded-full border-2 border-black h-3 w-3 mr-1 bg-black"></div>
-            </div>
-            <div className="flex flex-col w-full p-12">
-              <div className="flex flex-row w-full text-center justify-center">
-                <p className="text-xl text-white text-center tracking-wider">hi, i'm tiff</p>
-                <div className="w-3 my-1 mx-2 bg-white animate-blink"></div>
-              </div>
-              <p className="text-white text-md tracking-wider mt-6">
-                i'm a software engineer with experience in the healthcare industry who just really enjoys learning new things. my favorite way to learn is through hands-on experiences which means i spend a lot of my free time building things for fun!
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-row w-2/3 items-center mt-4 justify-end">
-            <button className="h-8 w-8 rounded-full bg-white mx-2 hover:bg-blue-50 hover:text-" onClick={() => window.open('https://github.com/tiffkwin')}>
-              <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
-            </button>
-            <button className="h-8 w-8 rounded-full bg-white mx-2 hover:bg-blue-50" onClick={() => window.open('https://www.linkedin.com/in/tiffany-k-nguyen/')}>
-              <FontAwesomeIcon icon={faLinkedinIn}></FontAwesomeIcon>
-            </button>
-            <button className="h-8 w-8 rounded-full bg-white ml-2 hover:bg-blue-50" onClick={() => window.open('https://twitter.com/tiffknguyen')}>
-              <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
-            </button>
-        </div>
-        </div>
-      </div> 
+    <section id="about">
+      <Center width="full" minHeight="100vh" height="full" color="white" marginTop="4rem">
+        <Box width={["70vw", "70vw", "70vw", "60vw"]} border="3px solid #558BF6" borderRadius="md" position="relative" p="12" color="#2A479F">
+          <Heading
+            px="2" py="1" 
+            position="absolute" top="-8" left="8"
+            bg="white" fontSize="xx-large" fontFamily="Paytone One" 
+            textDecoration="underline" borderRadius="sm">
+              ABOUT
+          </Heading>
+          <VStack fontFamily="Raleway" fontSize="lg" alignItems="start" maxW={["full", "full", "full", "50%", "60%"]}>
+            <HStack w="full">
+              <Text fontSize="xx-large" fontFamily="Paytone One">Hi, I'm Tiff </Text><br/>
+              <Text as={motion.h2} transformOrigin="bottom right" whileHover={{ rotate: [0, -10, 5, -5, 0] }} fontSize="xx-large">👋</Text>
+            </HStack>
+            <Text>I'm a software engineer. Sometimes I do other things too. 😌</Text>
+            <br/>
+            <Text fontFamily="Paytone One">Recent interests:</Text>
+              <Box pl="8">
+                <ul >
+                    <li>📚 DNFing books on Goodreads</li>
+                    <li>🧗🏻‍♀️ falling off V4s</li>
+                    <li>🎱 scratching at the pool hall</li>
+                    <li>🎨 drawing imperfect circles</li>
+                    <li>🌐 watching Blender tutorials on 0.5x speed</li>
+                    <li>🎶 forgetting metronomes exist</li>
+                </ul>
+              </Box>
+              <Image src="/tiff.png" borderRadius="sm" position="absolute" right="-10%" h="80%" top="8%" display={['none', 'none', 'none', 'block']}/>
+          </VStack>
+        </Box>
+      </Center>
     </section>
-  );
+  )
 }

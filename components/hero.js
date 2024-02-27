@@ -1,19 +1,17 @@
+import {  VStack, HStack, Center, Heading, Image, Text } from '@chakra-ui/react'
+
 export default function Hero() {
-  const styling = {
-    backgroundAttachment: 'fixed',
-    backgroundPosition:'center',
-    backgroundImage: 'url(\'/california-water.jpg\')',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat'
-  };
 
   return (
-    <section className="w-screen h-screen" style={styling} aria-label="rocky californian waters">
-      <div className="flex items-center w-full h-full text-center">
-        <div className="flex flex-col w-full items-center">
-            <p className="bg-black py-2 px-6 text-2xl text-white text-center tracking-widest">TIFFANY NGUYEN</p>
-            </div>
-      </div> 
-    </section>
-  );
+    <Center h="full" w="full" paddingX="20px" paddingY="2" minH="60vh">
+      <HStack height="full" spacing="3rem">
+        <VStack align="end" spacing="0" color="#2A479F" pl="4">
+          <Heading fontFamily="Paytone One" fontSize="7xl" lineHeight="2.5rem">TIFFANY</Heading>
+          <Heading fontFamily="Paytone One" fontSize="7xl">NGUYEN</Heading>
+          <Text fontFamily="Raleway" marginBottom="2rem" fontWeight="extrabold" color="#558BF6">SOFTWARE ENGINEER</Text>
+        </VStack>
+        <Image src="/3d-room.png" h="500px" marginLeft="4rem" display={['none', 'none', 'block']}/>
+      </HStack>
+    </Center>
+  )
 }
