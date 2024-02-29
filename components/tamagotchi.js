@@ -25,19 +25,19 @@ export default function Tamagotchi() {
     <section id="friend">
       <Center width="full" minHeight="100vh" height="full" color="white" marginTop="4rem">
         <Box width="400px" height="500px" position="relative">
-          <Box w="full" h="full" border="3px solid #2A479F" borderRadius="50% 50% 50% 50% / 60% 60% 40% 40%" bgColor="#558BF6" />
+          <Box w="full" h="full" border="3px solid #2A479F" borderRadius="50% 50% 50% 50% / 60% 60% 40% 40%" bg="linear-gradient(#558BF6,#1449b3)" />
           <Box w="250px" h="200px" position="absolute" bg="white" top="125px" left="75px" borderRadius="md" border="3px solid #2A479F"/>
-          <Button w="50px" h="50px" position="absolute" bgColor="#3869c9" borderRadius="full" bottom="90px" left="90px" border="3px solid #2A479F" _hover={{ bgColor: "#3975ed", filter: "brightness(75%)" }}
+          <Button w="50px" h="50px" position="absolute" bg="linear-gradient(#558BF6,#1449b3)" borderRadius="full" bottom="90px" left="90px" border="3px solid #2A479F" _hover={{ bgColor: "#3975ed", filter: "brightness(75%)" }}
             onClick={() => callTemporaryState(tamagotchiEat)}
           >
             A
           </Button>
-          <Button w="50px" h="50px" position="absolute" bgColor="#3869c9" borderRadius="full" bottom="70px" left="175px" border="3px solid #2A479F" _hover={{ bgColor: "#3975ed", filter: "brightness(75%)" }}
+          <Button w="50px" h="50px" position="absolute" bg="linear-gradient(#558BF6,#1449b3)" borderRadius="full" bottom="70px" left="175px" border="3px solid #2A479F" _hover={{ bgColor: "#3975ed", filter: "brightness(75%)" }}
             onClick={() => callTemporaryState(tamagotchiPoop)}
           >
             B
           </Button>
-          <Button w="50px" h="50px" position="absolute" bgColor="#3869c9" borderRadius="full" bottom="90px" left="260px" border="3px solid #2A479F" _hover={{ bgColor: "#3975ed", filter: "brightness(75%)" }}
+          <Button w="50px" h="50px" position="absolute" bg="linear-gradient(#558BF6,#1449b3)" borderRadius="full" bottom="90px" left="260px" border="3px solid #2A479F" _hover={{ bgColor: "#3975ed", filter: "brightness(75%)" }}
             onClick={() => callTemporaryState(tamagotchiSleep)}
           >
             C
