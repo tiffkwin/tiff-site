@@ -23,15 +23,13 @@ export default function Nav() {
             <Text>I'm a software engineer. Sometimes I do other things too. 😌</Text>
             <br/>
             <Text fontFamily="Paytone One">Recent interests:</Text>
-              <Box pl="8">
-                <ul >
-                    <li>📚 DNFing books on Goodreads</li>
-                    <li>🧗🏻‍♀️ falling off V4s</li>
-                    <li>🎱 scratching at the pool hall</li>
-                    <li>🎨 drawing imperfect circles</li>
-                    <li>🌐 watching Blender tutorials on 0.5x speed</li>
-                    <li>🎶 forgetting metronomes exist</li>
-                </ul>
+              <Box>
+                <Text>📚 DNFing books on Goodreads</Text>
+                <Text>🧗🏻‍♀️ Falling off V4s</Text>
+                <Text>🎱 Scratching at the pool hall</Text>
+                <Text>🎨 Drawing imperfect circles</Text>
+                <Text>🌐 Watching Blender tutorials on 0.5x speed</Text>
+                <Text>🎶 Forgetting metronomes exist</Text>
               </Box>
               <Image src="/tiff.png" borderRadius="sm" position="absolute" right="-10%" h="80%" top="8%" display={['none', 'none', 'none', 'block']}/>
           </VStack>

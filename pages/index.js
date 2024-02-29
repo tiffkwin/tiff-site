@@ -1,8 +1,9 @@
 import { ChakraProvider } from '@chakra-ui/react'
-import Hero from '../components/hero'
-import Nav from '../components/nav'
 import theme from '../theme'
+import Nav from '../components/nav'
+import Hero from '../components/hero'
 import About from '../components/about'
+import Tamagotchi from '../components/tamagotchi'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -10,6 +11,7 @@ function MyApp({ Component, pageProps }) {
       <Nav />
       <Hero />
       <About />
+      <Tamagotchi />
     </ChakraProvider>
   )
 }

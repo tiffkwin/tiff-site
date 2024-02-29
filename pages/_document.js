@@ -6,10 +6,8 @@ export default class Document extends NextDocument {
   render() {
     return (
       <Html lang='en'>
-        <Head >
-        <link rel="preload" href="Mona-Sans.woff2" as="font" type="font/woff2" crossOrigin />
-        </Head>
-        <body style={{ backgroundColor: "white" }}>
+        <Head />
+        <body style={{ backgroundColor: "white", maxWidth: "100%", overflowX: "hidden" }}>
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <Main />
           <NextScript />
