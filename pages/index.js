@@ -4,6 +4,7 @@ import Nav from '../components/nav'
 import Hero from '../components/hero'
 import About from '../components/about'
 import Tamagotchi from '../components/tamagotchi'
+// import Mastermind from '../components/mastermind'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -12,6 +13,7 @@ function MyApp({ Component, pageProps }) {
       <Hero />
       <About />
       <Tamagotchi />
+      {/* <Mastermind /> */}
     </ChakraProvider>
   )
 }

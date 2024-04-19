@@ -16,9 +16,10 @@ export default function Nav() {
               ABOUT
           </Heading>
           <VStack fontFamily="Raleway" fontSize="lg" alignItems="start" maxW={["full", "full", "full", "50%", "60%"]}>
+          <Image src="/tiff.png" borderRadius="sm" h="80%" display={['block', 'none', 'none', 'none']}/>
             <HStack w="full">
               <Text fontSize="xx-large" fontFamily="Paytone One">Hi, I'm Tiff </Text><br/>
-              <Text as={motion.h2} transformOrigin="bottom right" whileHover={{ rotate: [0, -10, 5, -5, 0] }} fontSize="xx-large">👋</Text>
+              <Text display={['none', 'block', 'block', 'block']} as={motion.h2} transformOrigin="bottom right" whileHover={{ rotate: [0, -10, 5, -5, 0] }} fontSize="xx-large">👋</Text>
             </HStack>
             <Text>I'm a software engineer. Sometimes I do other things too. 😌</Text>
             <br/>
